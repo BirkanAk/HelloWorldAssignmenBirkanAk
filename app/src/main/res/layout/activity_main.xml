@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/rView"
     tools:context=".MainActivity">
 
     <TextView
@@ -36,6 +36,7 @@
         android:id="@+id/epilepsy_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onEpilepsyClick"
         android:text="@string/click_fast_for_an_epilepsy_seizure"
         app:backgroundTint="#CAAC39"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,8 +44,24 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285"
-        android:onClick="onEpilepsyClick"/>
+        app:layout_constraintVertical_bias="0.285" />
 
+    <Switch
+        android:id="@+id/phrogswitch"
+        android:layout_width="216dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginRight="89dp"
+        android:layout_marginBottom="75dp"
+        android:text="@string/switch_for_phrog"
+        android:textColorHighlight="#9F2626"
+        android:textColorLink="#C62D2D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:checked="true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
