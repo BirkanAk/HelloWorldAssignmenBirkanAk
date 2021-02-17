@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/rView"
     tools:context=".MainActivity">
 
     <TextView
@@ -16,22 +17,34 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintVertical_bias="0.119" />
 
     <ImageView
         android:id="@+id/phrogimg"
-        android:layout_width="349dp"
-        android:layout_height="460dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginRight="70dp"
+        android:layout_width="284dp"
+        android:layout_height="291dp"
+        android:contentDescription="@string/yee_this_is_a_picture_of_a_phrog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87"
+        app:srcCompat="@drawable/phrog" />
+
+    <Button
+        android:id="@+id/epilepsy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click_fast_for_an_epilepsy_seizure"
+        app:backgroundTint="#CAAC39"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hello_text"
-        app:srcCompat="@drawable/phrog"
-        android:contentDescription="yee this is a picture of a phrog" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285"
+        android:onClick="onEpilepsyClick"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
