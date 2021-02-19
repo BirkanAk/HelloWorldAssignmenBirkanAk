@@ -1,0 +1,2 @@
+# Birkan Ak Hello World Assignment
+My first assignment of Hello World. I used Android Studio and simulated this on the device Pixel 3a. My code has a button, a switch for an image (Phrog), and a text. When you press the button, the color of everything randomly changes, and the text size changes randomly too. The switch is for the Phrog image to become visible and invisible, and when it becomes invisible, a dialog box appears.
